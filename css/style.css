@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-image: url('../img/HappyWorldGirls.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 30px 0px;
+}
+
+.poppins {
+	font-family: 'Poppins', sans-serif;
+}
+
+.tillana {
+	font-family: 'Tillana', sans-serif;
+}
+
+.none {
+	display: none;
+}
+
+.hero {
+	text-align: center;
+	margin: 10px 0px;
+}
+
+.lg {
+	font-size: 100px !important;
+}
+
+.naik {
+	animation: naik 5s linear forwards !important;
+}
+
+.d-flex {
+	display: flex;
+	gap: 10px;
+}
+
+.container {
+	margin: 30px auto;
+	width: 90%;
+	text-align: center;
+}
+
+.btn-heart {
+	color: red;
+	font-size: 35px;
+	animation: rotateHearts 1s linear infinite forwards alternate;
+}
+
+.btn-heart:hover {
+	text-shadow: 0 0 5px red;
+	transform: translateY(-5px);
+	animation: none;
+}
+
+.typeWriting::after {
+	content: '';
+	height: 100%;
+	border-right: 1px solid black;
+	animation: typeWriting .5s linear infinite;
+	padding: 0 0 0 5px;
+}
+
+
+
+
+
+
+@keyframes rotateHearts {
+	from {
+		rotate: -15deg;
+	}
+	to {
+		rotate: 15deg;
+	}
+}
+
+@keyframes typeWriting {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes naik {
+	0% {
+		transform: translateY(400px);
+		text-shadow: 0 0 0 0;
+	}
+	50% {
+		text-shadow: 0 0 10px red;
+	}
+	75% {
+		text-shadow: 0 0 15px red;
+	}
+	100% {
+		transform: translateY(100px);
+		text-shadow: 0 0 20px red;
+	}
+}
